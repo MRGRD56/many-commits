@@ -10,5 +10,5 @@ for ($i = 1; $i -le $count; $i++)
     git add *
     git commit -m ($time)
     git push origin master
-    Write-Host ("[Прогресс: " + $i + " / 50]")
+    Write-Host ("[Прогресс: " + $i + " / " + $count + "]")
 }
