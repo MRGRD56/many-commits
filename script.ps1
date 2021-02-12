@@ -1,4 +1,4 @@
-for ($i = 0; $i -lt 50; $i++)
+for ($i = 1; $i -le 50; $i++)
 {
     $time = [System.DateTime]::Now.ToString("yyyy-MM-ddTHH\:mm\:ss")
     [System.IO.File]::WriteAllText("C:\Users\priv-repo\readme.md", $time)
