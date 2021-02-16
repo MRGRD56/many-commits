@@ -9,6 +9,8 @@ for ($i = 1; $i -le $count; $i++)
     [System.IO.File]::WriteAllText("C:\Users\1\priv-repo\readme.md", $time)
     git add *
     git commit -m ($time)
-    git push origin master
     Write-Host ("[Прогресс: " + $i + " / " + $count + "]")
 }
+
+git push origin master
+Write-Host ($commit + "COMMIT(S) PUSHED")
