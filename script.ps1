@@ -10,7 +10,7 @@ for ($i = 1; $i -le $count; $i++)
     git add *
     git commit -m ($time)
     Write-Host ("[Прогресс: " + $i + " / " + $count + "]")
-    if ($i % 10 -eq 0)
+    if ($i % 50 -eq 0)
     {
         git push origin master
         Write-Host ("SUCCECCFULY PUSHED")
