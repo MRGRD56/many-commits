@@ -15,7 +15,7 @@ for ($i = 1; $i -le $count; $i++)
     [System.IO.File]::WriteAllText("C:\Users\SU\many-commits\readme.md", $time)
     git add *
     git commit -m ($time)
-    Write-Host ("[Прогресс: " + $i + " / " + $count + "]")
+    Write-Host ("[Progress: " + $i + " / " + $count + "]")
     if ($i % 200 -eq 0)
     {
         Push
